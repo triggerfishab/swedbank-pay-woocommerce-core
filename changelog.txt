@@ -1,3 +1,11 @@
+Version 7.0.2
+Fixed
+- Typo in package name
+
+Version 7.0.1
+Fixed
+- PHP errors
+
 Version 7.0.0
 Added
 - Checkout V3
