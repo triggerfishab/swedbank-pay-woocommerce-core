@@ -117,6 +117,7 @@ class Data implements \ArrayAccess
      * @return void
      * @link http://www.php.net/manual/en/arrayaccess.offsetset.php
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
         $this->data[$offset] = $value;
@@ -129,6 +130,7 @@ class Data implements \ArrayAccess
      * @return bool
      * @link http://www.php.net/manual/en/arrayaccess.offsetexists.php
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
         return $this->hasData($offset);
@@ -141,6 +143,7 @@ class Data implements \ArrayAccess
      * @return void
      * @link http://www.php.net/manual/en/arrayaccess.offsetunset.php
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
         $this->unsData($offset);
@@ -153,6 +156,7 @@ class Data implements \ArrayAccess
      * @return mixed
      * @link http://www.php.net/manual/en/arrayaccess.offsetget.php
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
         return $this->getData($offset);
